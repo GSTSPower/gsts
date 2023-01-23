@@ -3,24 +3,7 @@ const right = document.querySelector('.arrow-right')
 const container = document.querySelector('.slider-container')
 
 
-// let offset = 0;
 
-
-// right.addEventListener('click', () => {
-//   offset += 700;
-//   if (offset > 700) {
-//     offset = 0
-//   }
-//   container.style.left = -offset + 'px';
-// })
-
-// left.addEventListener('click', () => {
-//   offset -= 700;
-//   if (offset < 0) {
-//     offset = 700
-//   }
-//   container.style.left = -offset + 'px';
-// })
 
 let slideIndex = 1;
 showSlides(slideIndex);
