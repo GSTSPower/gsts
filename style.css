@@ -1,19 +1,57 @@
 .nav-item:hover {
-   background-color: blue;
+   background-color: rgb(108, 101, 134);
+}
+
+.slider {
+   width: 100%;
+   margin: .2px auto;
+   overflow: hidden;
+ }
+ 
+ .slide {
+   width: 100%;
+   height: 50%;
+ }
+ 
+ .slider-container {
+   display: flex;
+   position: relative;
+   transition: transform 0.5s ease;
+ }
+ 
+ 
+ .arrow {
+   width: 30px;
+   position: absolute;
+   top: 5%;
+ }
+ 
+ .arrow-left {
+   left: 1%;
+ }
+ 
+ .arrow-right {
+   right: 1%;
  }
 
-h1, h2 {
+h1 {
+   font-size: 120%;
+   ;font-weight: bold
+}
+
+h5, h6 {
    text-align: center;
-   background-color: blue;
+   background-color: rgb(108, 101, 134);
    margin: auto;
    color: white;
    padding-bottom: 0.5%;
    font-family:'Lato', sans-serif;
-   font-size: x-large;
+   font-size: large;
  }
 
 h2 {
    margin-bottom: 0.5%;
+   font-size: large;
  }
 
 .col-8 {
@@ -64,12 +102,13 @@ h3, h4 {
 }
 
 .dropdown-item :hover {
-   background-color: blue;
+   background-color: rgb(108, 101, 134);
 }
 
 .page-footer {
-   width: 100%;
+   width: 103%;
    float: left;
+   margin-left: -1.5%;
    margin-top: 0.5%;
    border: 1px solid black;
    background-color: rgb(236, 235, 235);
@@ -79,23 +118,24 @@ h3, h4 {
 .footer-menu ul {
    list-style-type: none;
    text-align: left;
-   padding: 0;
-   margin: 0.5% 1%;
-   column-count: 3;
+   padding: 1%;
+   /* margin: 0.5% 1%; */
+   column-count: 1;
    float: left;
 }
 
 .footer-menu li {
    font-family: Arial, Helvetica, sans-serif;
-   font-size: 100%;
-   line-height: 120%;
+   font-size: 80%;
+   line-height: 100%;
+   padding: 2px;
 }
 
 .copy {
    text-align: left;
    font-size: 70%;
    padding: 0 3%;
-   margin: 1% auto;
+   margin: 2% 20% 0 1%;
    line-height: 100%;
 }
 
@@ -109,46 +149,61 @@ h3, h4 {
 }
 
 .phone2 {
-   margin: 10%;
+   margin: 5%;
 }
 
 .mail {
-   margin: 10%;
+   margin: 5%;
 }
 
 .phone1 > img {
-   width: 10%;
-   height: 10%;
+   width: 5%;
+   height: 5%;
 }
 
 .phone2 > img {
-   width: 10%;
-   height: 10%;
+   width: 5%;
+   height: 5%;
 }
 
 .mail > img {
-   width: 10%;
-   height: 10%;
+   width: 5%;
+   height: 5%;
 }
 
 @media screen and (max-width: 992px) {
    .col-lg-3 {
                border-left: none;
-             }
          }
- 
+   .navbarToggleExternalContent {
+            display: none;
+   }
+         }
+
 @media screen and (min-width: 400px) and (max-width: 992px) {
    .col-lg-3 {
                border-left: 1px solid black;
-             }
+            }
+   .navbar {
+               display: none;
+      }
+   .artical {
+      display: none;
+   }
          }
- 
+
 @media screen and (max-width: 400px) {
    .col-lg-3 {
                border-left: 1px solid black;
-             }
+            }
+   .navbar {
+               display: none;
+      }
+      .artical {
+         display: none;
+      }
          }
 
 
-    
+
 
