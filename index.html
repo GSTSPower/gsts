@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>GSTS Power Главная</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="componenets/index/index.css">
+<style>
+
+.nav-item {
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+h2, h5 {
+  text-align: center;
+  background-color: rgb(108, 101, 134);
+  margin: auto;
+  color: white;
+  padding-bottom: 0.5%;
+}
+
+h5 {
+  margin-bottom: 0.5%;
+  font-family:'Plus Jakarta Sans', sans-serif;
+}
+
+.col {
+  border: 1px solid grey;
+  background: lightgray;
+  margin-top: 20px;
+  animation: picture 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+.light {
+  margin-left: 39%;
+  margin-top: -45.9%;
+}
+
+.circle1 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid yellow;
+  border-radius: 50%;
+  margin: 21% 73%;
+  animation: circle 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+.circle2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid yellow;
+  border-radius: 50%;
+  margin: -31% 32%;
+  animation: circle 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+    }
+
+.logo3 {
+  animation: logo3 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  margin: -20% 10% 5%;
+
+}
+
+@keyframes picture {
+  0%{
+    background-color: lightgrey
+    }
+  50% {
+    background-color: grey;
+    }
+  100% {
+    background: darkgrey;
+    } 
+}
+
+@keyframes logo3 {
+  00% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(1px, 1px) rotate(-0,5deg); }
+  20% { transform: translate(-1px, 0px) rotate(1deg); }
+  30% { transform: translate(2px, 1px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-2px, 1px) rotate(0deg); }
+  70% { transform: translate(1px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes circle {
+  0%{
+    background-color: radial-gradient(circle at 50% 40%,white 20%,yellow 50%);
+    }
+  50% {
+    background-color: rgb(240, 245, 103);
+    box-shadow:0 0 10px 2px rgba(255,255,0,.7);
+    }
+  100% {
+    background: rgb(233, 241, 4);
+    }
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h2 style="font-size: 150%; font-weight: bold;"><a id="main" class="navbar-brand" href="#main"><img src="img/logo1.png" alt="logo" style="width: 35px;"></a>GSTS Power</h2>
+      <h5><img src="img/220.jpg" alt="" style="width: 4%;">Стабильная энергия для любых задач<img src="img/380.jpg" alt="" style="width: 4%;"><div style="color: white; margin-right: 5%; font-size: 15px; text-align: end;">+375(44)759-29-70 <e-mail>gsts.power@gmail.com</e-mail></div></h5>
+    </header>   
+
+    <!-- Menu -->
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-primary p-1">
+        <h5 class="text-white h7"></h5></div></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <ul class="navbar-nav mx-auto mb-1 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#main">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">О компании</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  id="navbardrop" data-toggle="dropdown">
+              Продукция
+            </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#benzin">Бензиновые генераторы</a>
+                <a class="dropdown-item" href="#motopompa">Мотопомпы</a>
+                <a class="dropdown-item" href="#dizelgen">Дизельные генераторы</a>
+                <a class="dropdown-item" href="#abp">Автоматический ввод резерва для генераторов (АВР)</a>
+                <a class="dropdown-item" href="#chit">Распределительные щиты</a>
+              </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Контакты</a>
+          </li>
+          </li>
+        </ul>
+    </nav>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-sm-12 col-md-12 col-xl-9">
+            <div class="slider">
+              <div class="slider-container">
+              <img class="slide" src="img/дом1.jpg" alt="">
+              <img class="slide" src="img/мотопомпа.jpg" alt="">
+            </div>
+            </div>
+            <img class="arrow arrow-left" src="#" alt="">
+            <img class="arrow arrow-right" src="#" alt="">
+            
+            <br>
+        <!-- <h5 style="text-align: center;"><a href="#main"><img src="img/logo1.png" alt="logo" style="width: 35px;"></a><span>Наши предложения</span></h5> 
+        <div class="col-6"> 
+          <a href="#benzin" alt="">Бензиновые генераторы<img src="img/803_original.jpg" style="width: 80%;"></a>
+        </div>
+        <div class="col-6">
+          <a href="#motopompa" alt="">Мотопомпы<img src="img/m690_original.jpg" style="width: 80%;"></a>
+        </div>
+        <div class="col-6">
+          <a href="inventorn" alt="">Инвенторные генераторы<img src="img/i830_original.jpg" style="width: 80%;"></a>
+        </div>  
+        <div class="col-6">
+          <a href="#dizelgen" alt="">Дизельные генераторы<img src="img/d885_original.jpg" style="width: 80%;"></a>
+        </div>
+        <div class="col-6">
+          <a href="#svarochn" alt="">Сварочные электростанции<img src="img/s041_original.jpg" style="width: 80%;"></a>
+        </div>
+        <div class="col-6"> 
+          <a href="#abp" alt="">Шкаф АВР<img src="img/ba32a739a19aa266a3dcb22e11e2c2ce.jpg" style="width: 80%;"></a>
+        </div> -->
+        <div id="products"></div>
+        <h5 style="text-align: center;"><a href="#main"><img src="img/logo1.png" alt="logo" style="width: 35px;"></a><a name="benz" id = "benzin">Бензиновые генераторы</a></h5> 
+        <!-- <h3><a name="benz" id = "benzin">Бензиновые генераторы</a></h3>  -->
+          <a href="img/803_original.jpg" alt=""><img src="img/803_original.jpg" alt="benz" style="width: 20%;"></a>
+          <a href="img/b033_original.jpg" alt=""><img src="img/b033_original.jpg" alt="benz" style="width: 20%;"></a>
+          <a href="img/b490_original.jpg" alt=""><img src="img/b490_original.jpg" alt="benz" style="width: 20%;"></a>
+          <a href="img/15065_0.jpg" alt=""><img src="img/15065_0.jpg" alt="col" style="width: 20%;"></a>
+        <h1>Описание</h1>
+        <p>Бензиновые генераторы совершенно незаменимы для множества ситуаций, где требуется недорогой, мобильный, неприхотливый и простой в эксплуатации источник независимого электроснабжения.
+        Они отлично справятся с созданием резервного электропитания в случаях отключения электроэнергии, но и гарантирует стабильную работу в качестве главного источника питания.
+        Бензогенератор может применяться на даче, в гараже, для уличной торговли или летнего кафе, а также при выездах в автопутешествия с палатками или на рыбалку.</p>
+        <ul>
+            <li>Однофазные номинальной мощностью от 0,5 до 12 кВт</li>
+            <li>Трехфазные номинальной мощностью от 5 до 20 кВт</li>
+            <li>Инвенторные номинальной мощностью от 0,5 до 12 кВт</li>
+            <li>Сварочные номинальной мощностью от 2 до 20 кВт</li>
+            <li>Дополнительные опции: АВР (автозапуск), ручки и колеса, кожух всепогодный шумоизоляционный</li>
+        </ul>
+        <h5 style="text-align: center;"><a href="#main"><img src="img/logo1.png" alt="logo" style="width: 35px;"></a><a name="moto" id = "motopompa">Мотопомпы</a></h5>
+        <!-- <h3><a name="moto" id = "motopompa">Мотопомпы</a></h3>  -->
+          <a href="img/m690_original.jpg" alt=""><img src="img/m690_original.jpg" alt="moto" style="width: 20%;"></a>
+        <h1>Описание</h1>
+        <p>Используются как для откачки воды из канав на дачных участках, так и для ликвидации последствий крупных промышленных аварий. В период весеннего половодья быстро откачает воду из подвальных помещений или погребов. </p>
+        <ul>
+          <li>Для чистой воды</li>
+          <li>Для среднезагрязненной воды</li>
+          <li>Для грязной воды с камнями и илом</li>
+          <li>Для химических жидкостей</li>
+          <li>Дополнительные опции: всасывающие и напорные рукава, головки муфтовые, ручки и колеса</li>
+      </ul>
+        <h5 style="text-align: center;"><a href="#main"><img src="img/logo1.png" alt="logo" style="width: 35px;"></a><a name="moto" id = "inventorn">Инвенторные генераторы</a></h5>
+        <!-- <h3><a name="invent" id = "inventorn">Инвенторные генераторы</a></h3>  -->
+          <a href="img/i830_original.jpg" alt=""><img src="img/i830_original.jpg" alt="invent" style="width: 20%;"></a>
+          <a href="img/i833_original.jpg" alt=""><img src="img/i833_original.jpg" alt="invent" style="width: 20%;"></a>
+          <a href="img/i835_original.jpg" alt=""><img src="img/i835_original.jpg" alt="invent" style="width: 20%"></a>
+          <a href="img/i481_original.jpg" alt=""><img src="img/i481_original.jpg" alt="invent" style="width: 20%"></a>
+      <h1>Описание</h1>
+      <p>Инверторные бензиновые генераторы ТСС обеспечивают выработку электрического тока для качественного и стабильного питания подключенной техники, и оборудования. Компактные размеры позволяют использовать инверторные бензиновые электростанции во многих бытовы.</p>
+        <h1>Характеристика</h1>
+        <ol>
+            <li>Выходное напряжение - 220 В</li>
+            <li>Мощность - 0.8 кВт</li>
+            <li>Эксплуатация - новый</li>
+            <li>Производитель - ГК ТСС</li>
+        </ol>
+        <h5 style="text-align: center;"><a href="#main"><img src="img/logo1.png" alt="logo" style="width: 35px;"></a><a name="dizel" id = "dizelgen">Дизельные генераторы</a></h5>
+        <!-- <h3><a name="dizel" id = "dizelgen">Дизельные генераторы</a></h3>  -->
+          <a href="img/d885_original.jpg" alt=""><img src="img/d885_original.jpg" alt="dizel" style="width: 20%"><img src="img/запчасти1.jpg" alt="dizel" style="width: 20%"></a>
+      <!-- <h5>Описание</h5>
+      <p>Дизель генератор с максимальной мощностью 5 кВт не только отлично справится с созданием резервного электропитания в случаях отключения электроэнергии, но и гарантирует стабильную работу в качестве главного источника питания.</p> -->
+      <h1>Характеристика</h1>
+        <ul>
+          <li>Трехфазные номинальной мощностью от 5 до 1000 кВт</li>
+          <li>Дополнительные опции: АВР (автозапуск), прицеп, кожух всепогодный шумоизоляционный, контейнер</li>
+          <li>Ремонт блока управления дизель-генераторных установок и поставка запасных частей</li> 
+        </ul>
+        <h5 style="text-align: center;"><a href="#main"><img src="img/logo1.png" alt="logo" style="width: 35px;"></a><a name="ABP" id = "abp">Автоматический ввод резерва для генераторов (АВР)</a></h5>
+        <!-- <h3><a name="ABP" id = "abp">Автоматический ввод резерва для генераторов (АВР)</a></h3>  -->
+          <a href="img/ba32a739a19aa266a3dcb22e11e2c2ce.jpg" alt=""><img src="img/ba32a739a19aa266a3dcb22e11e2c2ce.jpg" alt="ABP" style="width: 20%;"></a>
+        <h1>Описание</h1>
+          <ul>
+            <li>Предназначен для бензогенераторов мощностью от 6 до 9 кВт, напряжением 400В.</li>
+            <li>При возникновении аварийной ситуации производит автоматический запуск электростанции, восстанавливая электроснабжение.</li>
+            <li>Рабочий диапазон температур от +5°C до +40°C.</li>
+            <li>В режиме ожидания станция осуществляет постоянную подзарядку бортового аккумулятора от сети.</li>
+            <li>Комплектуется кабелем 5 м для подключения к электростанции.</li>
+          </ul>
+          <h5 style="text-align: center;"><a href="#main"><img src="img/logo1.png" alt="logo" style="width: 35px;"></a><a name="ABP" id = "chit">Распределительные щиты</a></h5>
+          <a href="img/щит 1.jpg" alt=""><img src="img/щит 1.jpg" alt="chit" style="width: 20%;"></a>
+          <a href="img/щит 2.jpg" alt=""><img src="img/щит 2.jpg" alt="chit" style="width:28%;"></a>
+        <h1>Описание</h1>
+          <ul>
+            <li>Предназначены для удобного подключения различного электрооборудования от генераторных установок.</li>
+            <li>Комплектуется кабелем 5 м для подключения к электростанции.</li>
+          </ul>
+          <h5 style="text-align: center;"><a href="#main"><img src="img/logo1.png" alt="logo" style="width: 35px;"></a><a name="benz" id = "about">О компании GSTS POWER Минск</a></h5> 
+          <!-- <h2><a id = "about" class="navbar-brand" href="#main"><img src="img/logo1.png" alt="logo" style="width: 55px;"></a></h2><h3 >О компании GSTS POWER Минск </h3> -->
+              <p>Портативные дизельные генераторы – идеальное решение в области обеспечения электроэнергией дачных домов, строительных площадок, автосервисов, магазинов, складов и многих других объектов. Переносной дизель-генератор небольшой мощности легко помещается в багажнике автомобиля и может быстро перевозиться туда, где необходим источник электроэнергии. Мини электростанции, представленные в нашем онлайн-каталоге, производятся в различных вариантах, включая версии с электростартером и колёсами для комфортного перемещения. Модели дизельных генераторов, запускаемые поворотом ключа, могут дооборудоваться автозапуском для использования в качестве резервного источника питания.</p>
+              <h1>GSTS POWER предлагает товары следующих поставщиков, марок и производителей: </h1>
+              <p>ГК ТСС, Россия, Fogo,Польша и другие.</p>
+              <h1>Общие сведения</h1>
+                <ul>
+                  <li>Компания GSTS POWER - Дилер</li>
+                  <li>Компания GSTS POWER основана в 2020 году.</li>
+                </ul>
+            <h1>Отзывы</h1>
+            <p style="font-weight: bold;">ГЛХУ "Чаусский лесхоз"</p>
+              <a href="img/otzyv1.jpg"><img src="img/otzyv1.jpg" style="width: 20%;"></a>
+            
+                <h5 style="text-align: center;"><a href="#main"><img src="img/logo1.png" alt="logo" style="width: 35px;"></a><a name="benz" id = "contact">Контакты</a></h5>
+            <div class="phone2"><img src="img/phone.png" alt="phone"> +375 (44) 759-29-70</div>
+            <div class="mail"><img src="img/mail.png" alt="mail"> gsts.power@gmail.com </div>
+                
+      </div>
+      
+      <div class="col-lg-3 col-sm-12 col-md-12 col-xl-3">
+        <div class = "artical">
+        <h4 style="margin-left: 20%; margin-top: -5%; font-weight: bold">Продукция:</h4>
+          <ul>
+            <li><a style="color: rgb(108, 101, 134); font-weight: bold;" href="#benzin">Бензиновые генераторы</a></li>
+            <li><a style="color: rgb(108, 101, 134); font-weight: bold;" href="#motopompa">Мотопомпы</a></li> 
+            <li><a style="color: rgb(108, 101, 134); font-weight: bold;" href="#dizelgen">Дизельные генераторы</a></li> 
+            <li><a style="color: rgb(108, 101, 134); font-weight: bold;" href="#abp">Автоматический ввод <br>резерва для генераторов (АВР)</a></li> 
+            <li><a style="color: rgb(108, 101, 134); font-weight: bold;" href="#chit">Распределительные щиты</a></li>
+          </ul>
+        <span class="phone1" style="font-weight: bold"><img src="img/phone.png" alt="phone"> +375 (44) 759-29-70</span>
+      </div>
+        <!-- <div class="col d-none d-xl-block">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="light"><img src="img/light.png" alt=""></div>
+          <div class="logo3"><img src="img/logo1.png" alt="logo3" style="width: 80px;"></div> -->
+        
+        </div>
+      
+      </div>
+    <footer class="page-footer">
+      <div class="footer-menu">
+        <ul>
+          <li><a style="color: rgb(108, 101, 134);" href="#product">Продукция</a></li>
+          <li><a style="color: rgb(108, 101, 134);" href="#main">Главная</a></li>
+          <li><a style="color: rgb(108, 101, 134);" href="#contact">Контакты</a></li>
+          <li><a style="color: rgb(108, 101, 134);" href="#about">О компании</a></li>
+        </ul>
+      </div>
+      <div class="copy">
+        &copy; GSTS-Power г. Минск,
+        <div class="phone"><img src="img/phone.png" alt="phone"> +375 (44) 759-29-70
+        </div>
+        ИП Подлесская Анна Алексеевна, УНП 192840317, Регистрация в Торговом реестре №46690 от 07.12.2020 , Государственная регистрация от 07.12.2020, Минский горисполком
+        Юр. адрес: г. Минск, ул. Фабрициуса
+        Номер плательщика в ЕРИП: 9613826586 
+      </div>
+    </footer>
+  </div>
+  </div>
+<!--Constants and Itils-->
+<script src="contants/catalog.js"></script>
+<script src="contants/root.js"></script>
+<script src="utils/localStorageUtils.js"></script>
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="components/Products/Products.js"></script>
+    <link rel="components/Products/Products.css">
+  
+  </body>
+</html>
