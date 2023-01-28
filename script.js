@@ -3,8 +3,6 @@ const right = document.querySelector('.arrow-right')
 const container = document.querySelector('.slider-container')
 
 
-
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
