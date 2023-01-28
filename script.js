@@ -1,20 +1,9 @@
-const left = document.querySelector('.arrow-left')
-const right = document.querySelector('.arrow-right')
+
 const container = document.querySelector('.slider-container')
 
 
 let slideIndex = 1;
 showSlides(slideIndex);
-
-right.addEventListener ("click", function () {
-  showSlides(slideIndex += 1);
-  makeTimer();//Пересоздаем интервал если производится нажатие 
-});
-
-left.addEventListener ("click", function () {
-  showSlides(slideIndex -= 1);
-  makeTimer();//Пересоздаем интервал если производится нажатие 
-});
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
