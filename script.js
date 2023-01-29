@@ -1,6 +1,7 @@
 const left = document.querySelector('.arrow-left')
 const right = document.querySelector('.arrow-right')
 const container = document.querySelector('.slider-container')
+let slides = document.getElementsByClassName("slide")
 
 
 // let offset = 0;
@@ -41,7 +42,7 @@ function currentSlide(n) {
 
 
 function showSlides(n) {
-    let slides = document.getElementsByClassName("slide");
+    
     if (n > slides.length) {
       slideIndex = 1;
     }
